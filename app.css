@@ -1,0 +1,148 @@
+:root {
+    /* Primary */
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+    /* Neutral */
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --very-pale-orange: hsl(33, 100%, 98%);
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--cream);
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.card-cont {
+    width: 22em;
+    margin: 10px;
+}
+
+header {
+    padding: 1em 1.5em;
+    background-color: var(--soft-red);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1em;
+}
+
+header img {
+    width: 3.3em;
+}
+
+.my-balance-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.my-balance-cont p {
+    color: var(--very-pale-orange);
+    font-size: 1.5em;
+    padding: 0;
+    margin: .2em 0;
+    font-weight: 700;
+}
+
+.my-balance-cont span {
+    color: var(--very-pale-orange);
+}
+
+main {
+    background-color: var(--very-pale-orange);
+    padding: 1em 1.5em;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+
+h1 {
+    color: var(--dark-brown);
+    font-size: 1.5em;
+}
+
+.chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 8em;
+}
+
+.bar-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.bar {
+    width: 2em;
+    border-radius: 5px;
+    background-color: var(--soft-red);
+    cursor: pointer;
+}
+
+.day {
+    color: var(--medium-brown);
+    margin-top: .5em;
+    font-size: .8em;
+}
+
+hr {
+    margin: 1em 0;
+    background-color: var(--cream);
+    height: 1px;
+    border: 0;
+}
+
+.this-month-cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.months-total > span {
+    color: var(--medium-brown);
+}
+
+.months-total > p {
+    color: var(--dark-brown);
+    font-weight: 700;
+    font-size: 2em;
+    margin: .1em 0;
+}
+
+.from-last-month {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    justify-content: center;
+}
+
+.from-last-month span:first-of-type {
+    color: var(--dark-brown);
+    font-weight: bold;
+}
+
+.from-last-month span:last-of-type {
+    color: var(--medium-brown);
+}
+
+
+.bg-cyan {
+    background-color: var(--cyan);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (max-width:400px) {
+    body {
+        font-size: .9em;
+    }
+}
